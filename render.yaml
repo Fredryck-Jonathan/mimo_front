@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: mimo-front
+    env: static
+    branch: main             # branche à déployer
+    buildCommand: npm install && npm run build
+    startCommand: npm run start   # pas utilisé pour static env
+    staticPublishPath: build
+    plan: free  
