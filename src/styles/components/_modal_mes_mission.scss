@@ -1,0 +1,203 @@
+@use"../abstracts/variable" as v;
+
+
+.modal-finish{
+
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    min-height: 100vh;
+    width: 100%;
+    background-color: white;
+    top: 0;
+    left: 0;
+
+    &.active{
+
+        display: flex;
+
+    }
+
+    .modal-finish__first-state{
+
+        width: 95%;
+
+
+    }
+
+    .modal-finish__button-return{
+
+        display: flex;
+        //align-items: center;
+
+
+
+        gap: 5px;
+
+        margin-top: 20px;
+
+        padding: 0;
+
+        border-radius: v.$border-radius;
+
+        background-color: white;
+
+        cursor: pointer;
+
+        border: none;
+        //border: 1px solid grey;
+        //box-shadow: 0px 0px 5px grey;
+
+        color: v.$third-color;
+
+        transition: all 0.3s;
+
+        /*&:hover{
+
+            background-color: rgb(236, 236, 236);
+
+        }*/
+
+
+        ion-icon{
+
+            
+
+        }
+
+        p{
+
+            margin: 0;
+            font-weight: 600;
+
+        }
+
+    }
+
+    .modal-finish__recap{
+
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+
+        p{
+
+            font-size: 18px;
+
+
+        }
+
+    }
+
+    .modal-finish__first-recap{
+
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        gap: 10px;
+
+        background-color: rgb(228, 228, 228);
+        border-radius: 20px;
+
+        &-1{
+
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+
+        }
+
+        &-img{
+
+            grid-row: 1/3;
+            grid-column: 1/2;
+            width: 70px;
+            height: 70px;
+            border-radius: 500000px;
+            overflow: hidden;
+
+            img{
+
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+
+            }
+
+        }
+
+
+
+
+
+        .modal-finish__first-recap-text-1{
+
+
+
+        }
+
+        .modal-finish__first-recap-text-2{
+
+
+
+        }
+
+        .modal-finish__first-recap-date{
+
+            margin: 0;
+
+        }
+
+    }
+
+    .modal-finish__recap-mot{
+
+        display: flex;
+        flex-direction: column;
+
+        textarea{
+
+            min-height: 70px;
+            padding: 5px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            box-sizing: border-box; 
+
+        }
+
+    }
+
+    .modal-finish__recap-confirmation{
+
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+    }
+
+    .modal-finish__recap-submit{
+
+        cursor: pointer;
+        padding: 10px;
+        font-size: 25px;
+        border-radius: 20px;
+        border: none;
+        color: white;
+        background-color: v.$third-color;
+        transition: all 0.3s;
+
+        &:hover{
+
+            background-color: #1d8e62;
+
+        }
+
+
+    }
+
+
+}

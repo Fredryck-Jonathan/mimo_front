@@ -1,0 +1,207 @@
+.home-page{
+
+    min-height: 100vh;
+    display: flex;
+
+
+    .home-page__connect{
+
+
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px auto 0px auto;
+        gap: 20px;
+        padding-bottom: 130px;
+
+    }
+
+    .home-page__logo{
+
+
+        align-self: flex-start;
+
+        h1{
+
+            margin: 0px;
+            margin-top: 20px;
+
+        }
+
+    }
+
+
+    .home-page__hello{
+
+        align-self: flex-start;
+        margin: 0;
+        font-weight: 600;
+        font-size: 25px;
+
+    }
+
+    .home-page__dashboard{
+
+        position: relative;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #FFF3E0;
+        border-radius: 10px;
+
+        :first-child{
+
+            ::after{
+
+                content: "";
+                height: 60%;
+                width: 1px;
+                position: absolute;
+                right: 50%;
+                top: 50%;
+
+                transform: translate(-50%, -50%);
+
+                background-color: #FF8C42;
+
+            }
+
+        }
+
+        &-element{
+
+            display: flex;
+            padding: 20px;
+
+
+            &-content{
+
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                &:first-child{
+
+
+
+                }
+
+
+                p{
+
+                    margin: 0;
+                    color: #707280;
+                    font-weight: 600;
+
+                }
+
+
+                :first-child{
+
+                    color: black;
+                    font-weight: 600;
+                    
+                }
+
+            }
+
+        }
+
+    }
+
+
+    .home-page__mes-missions{
+
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        width: 100%;
+
+    }
+
+    .home-page__mes-missions-gallery{
+
+            display: flex;
+            flex-direction: column;
+
+            width: 100%;
+
+            gap: 20px;
+
+    }
+
+
+
+
+    .home-page__missions-section{
+
+        width: 100%;
+        align-self: flex-start;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+
+        
+
+    }
+
+
+    .home-page__missions-title{
+
+        font-size: 25px;
+        font-weight: 600;
+        margin: 0;
+
+    }
+
+
+
+    .home-page__missions-gallery{
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        
+
+    }
+
+
+
+    .home-page__auth{
+
+        display: flex;
+        align-items: center;
+
+        gap: 50px;
+
+
+        a{
+
+            color: white;
+            background-color: black;
+            padding: 20px;
+            text-decoration: none;
+
+        }
+
+    }
+
+
+
+
+
+}
+
+
+@media screen and (max-width: 1200px) {
+
+
+
+
+
+}
