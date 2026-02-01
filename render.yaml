@@ -1,7 +1,8 @@
+# render.yaml pour React SPA
 services:
-  - type: static               # <-- MUST be static
+  - type: web
     name: my-react-app
     branch: main
     buildCommand: npm install && npm run build
-    staticPublishPath: build   # dossier généré par CRA
-    plan: free  
+    staticPublishPath: build   # dossier créé par CRA
+    plan: free                 # free fonctionne ici
