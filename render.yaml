@@ -1,8 +1,7 @@
 services:
-  - type: web
-    name: mimo-front
-    branch: main             # branche à déployer
+  - type: static               # <-- MUST be static
+    name: my-react-app
+    branch: main
     buildCommand: npm install && npm run build
-    startCommand: npm run start   # pas utilisé pour static env
-    staticPublishPath: build
+    staticPublishPath: build   # dossier généré par CRA
     plan: free  
